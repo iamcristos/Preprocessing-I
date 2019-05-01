@@ -153,6 +153,12 @@ body {
   justify-content: flex-start;
   flex-direction: column;
 }
+@media (max-width: 760px) {
+  .body-container {
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+}
 @media (max-width: 550px) {
   .body-container {
     margin: 5px;
@@ -235,6 +241,11 @@ nav a {
   margin-top: 14px;
   padding-top: 10px;
 }
+@media (max-width: 760px) {
+  .section-container {
+    flex-direction: column;
+  }
+}
 @media (max-width: 550px) {
   .section-container {
     flex-direction: column;
@@ -245,6 +256,12 @@ nav a {
   justify-content: flex-start;
   flex-direction: column;
   width: 45%;
+}
+@media (max-width: 760px) {
+  .section-container .right-section {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 @media (max-width: 550px) {
   .section-container .right-section {
@@ -260,6 +277,11 @@ nav a {
 .right-section > ul li {
   padding: 10.5px;
   border-bottom: 1px solid darkgrey;
+}
+@media (max-width: 760px) {
+  .right-section > ul li {
+    text-align: center;
+  }
 }
 @media (max-width: 550px) {
   .right-section > ul {
@@ -279,12 +301,18 @@ p {
 .work-section table {
   width: 100%;
 }
-table:nth-child(1) {
+table tr:nth-child(even) {
   background-color: darkgrey;
 }
 th {
   padding: 12px 0;
   text-align: left;
+}
+@media (max-width: 550px) {
+  th {
+    padding: 0;
+    text-align: center;
+  }
 }
 td {
   margin: 0;
@@ -300,4 +328,9 @@ footer .footer {
 }
 footer p {
   text-align: center;
+}
+strong,
+h1 {
+  font-weight: bolder;
+  font-size: 16px;
 }
